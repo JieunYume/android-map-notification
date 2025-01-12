@@ -165,11 +165,8 @@ class MapActivity : AppCompatActivity() {
     private fun showBottomSheet(location: Location) {
         mapBottomSheetBinding.bottomSheetLayout.visibility = View.VISIBLE
         mapBottomSheetBinding.bottomSheetTitle.text = location.title
-        Log.d(
-            "jieun",
-            "mapBottomSheetBinding.bottomSheetTitle.text:" + mapBottomSheetBinding.bottomSheetTitle.text
-        )
         mapBottomSheetBinding.bottomSheetAddress.text = location.address
+        mapBottomSheetBinding.bottomSheetCategory.text = location.category
         bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
     }
 
